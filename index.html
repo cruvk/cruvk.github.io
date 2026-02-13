@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Cruvk Guarantor</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <link rel="icon" href="icon.png" type="image/png">
+  <link rel="apple-touch-icon" sizes="180x180" href="icon.png">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="icon.png">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-noise"></div>
+
+  <div class="wrap">
+    <div class="card" id="mainCard">
+      <div class="header">
+        <div class="avatar-wrap">
+          <div class="avatar">
+            <video autoplay muted loop playsinline>
+              <source src="avatar-video.mp4" type="video/mp4">
+              Ваш браузер не поддерживает видео
+            </video>
+          </div>
+        </div>
+        <div class="lang-inside" id="langSwitch">
+          <button class="lang-btn active" data-lang="ru">RU</button>
+          <button class="lang-btn" data-lang="en">EN</button>
+        </div>
+        <div class="title" data-i18n="title">Cruvk Guarantor</div>
+        <div class="subtitle" data-i18n="subtitle">Гарант сделок • Низкая комиссия • Безопасные сделки</div>
+      </div>
+
+      <div class="metrics">
+        <div class="metric">
+          <span id="dealsCount">600+</span>
+          <span data-i18n="successDeals">успешных сделок</span>
+        </div>
+        <div class="metric">
+          <span>4%</span>
+          <span data-i18n="commission">комиссия за сделку</span>
+        </div>
+      </div>
+
+      <div class="badge" data-i18n="info">Информация</div>
+      <div class="section-title" data-i18n="contacts">Контакты и сообщества</div>
+      
+      <div class="links">
+        <!-- Личные сообщения -->
+        <a href="https://t.me/Cruvk" class="link-card" target="_blank" rel="noreferrer">
+          <div class="link-info">
+            <div class="link-title" data-i18n="dmTitle">Личные сообщения</div>
+            <span class="t-name" data-i18n="dmSub">Связь для оформления сделок</span>
+          </div>
+          <div class="badge-tg">
+            <span class="k-dot"></span>
+            t.me/cruvk
+          </div>
+        </a>
+
+        <!-- Новостной канал -->
+        <a href="https://t.me/CruvkShop" class="link-card" target="_blank" rel="noreferrer">
+          <div class="link-info">
+            <div class="link-title" data-i18n="adapterTitle">Market channel</div>
+            <span class="t-name" data-i18n="mainChannel">Маркет канал</span>
+          </div>
+          <div class="badge-tg">
+            <span class="k-dot"></span>
+            t.me/CruvkShop
+          </div>
+        </a>
+
+        <!-- Отзывы -->
+        <a href="https://t.me/cruvk_otz" class="link-card" target="_blank" rel="noreferrer">
+          <div class="link-info">
+            <div class="link-title" data-i18n="reviews">Reviews</div>
+            <span class="t-name" data-i18n="reviewsSub">Отзывы</span>
+          </div>
+          <div class="badge-tg">
+            <span class="k-dot"></span>
+            https://t.me/cruvk_otz
+          </div>
+        </a>
+      </div>
+
+      <div class="section-title mt-space" data-i18n="how">Как проходит сделка</div>
+      
+      <div class="deal-flow">
+        <div class="deal-step">
+          <div class="deal-label">1</div>
+          <div class="deal-body">
+            <div class="deal-title" data-i18n="step1Title">Передача реквизитов</div>
+            <p data-i18n="step1Text">ПРОДАВЕЦ даёт свои реквизиты ПОКУПАТЕЛЮ.</p>
+          </div>
+        </div>
+        
+        <div class="deal-step">
+          <div class="deal-label">2</div>
+          <div class="deal-body">
+            <div class="deal-title" data-i18n="step2Title">Передача подарка гаранту</div>
+            <p data-i18n="step2Text">После этого ПРОДАВЕЦ передаёт мне NFT-подарок. Я отправляю скрин, что получил его. Продавец тоже фиксирует у себя (скрин/видео).</p>
+          </div> 
+        </div>
+        
+        <div class="deal-step">
+          <div class="deal-label">3</div>
+          <div class="deal-body">
+            <div class="deal-title" data-i18n="step3Title">Оплата и выдача</div>
+            <p data-i18n="step3Text">ПОКУПАТЕЛЬ переводит деньги ПРОДАВЦУ по реквизитам, и только после этого сам покупатель получает NFT-подарок себе.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="deal-block">
+        <div class="deal-subtitle" data-i18n="examplePayTitle">Пример, как оставлять реквизиты:</div>
+        <ul class="deal-list">
+          <li data-i18n="payPhone">Номер телефона/карты</li>
+          <li data-i18n="payName">ФИО</li>
+          <li data-i18n="payBank">Банк</li>
+        </ul>
+      </div>
+
+      <div class="deal-block">
+        <div class="deal-subtitle" data-i18n="exampleCryptoTitle">Пример, как оставлять адрес крипты:</div>
+        <p class="crypto-line">
+          <span data-i18n="tonLabel">TON —</span>
+          <span>Necropof-deal.ton</span>
+        </p>
+      </div>
+
+      <div class="deal-block warn">
+        <div class="deal-subtitle" data-i18n="commentTitle">Комментарий к переводу</div>
+        <p data-i18n="commentText">Покупателю желательно оставлять комментарий к переводу: <b>«отдал долг»</b> (или похожий), чтобы банк не задержал/не заблокировал платёж.</p>
+      </div>
+
+      <div class="deal-block">
+        <div class="deal-subtitle" data-i18n="starsTitle">Сделка на звёзды</div>
+        <p data-i18n="starsText">Если сделка на телеграм-звёзды — <b>продавцу обязательно указать юзернейм аккаунта</b>, на который присылать звёзды.</p>
+      </div>
+
+      <div class="foot-hint" data-i18n="foot">Проверяй юзернейм перед созданием сделки</div>
+    </div>
+  </div>
+  
+  <script src="app.js"></script>
+</body>
+</html>
